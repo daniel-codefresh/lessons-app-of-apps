@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   labels:
     app: lessons-api
-  name: lessons-api
+  name: lessons-api-deployment
   namespace: default
 spec:
   replicas: 3

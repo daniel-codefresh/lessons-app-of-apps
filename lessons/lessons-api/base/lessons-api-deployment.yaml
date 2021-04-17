@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: lessons-api
+  name: lessons-api-deployment
   namespace: default
   labels:
     app: lessons-api

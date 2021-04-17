@@ -1,8 +1,8 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: lessons-api-mongo
-  namespace: lessons-app
+  name: lessons-api-mongo-deployment
+  namespace: default
   labels:
     app: lessons-api-mongo
 spec:
