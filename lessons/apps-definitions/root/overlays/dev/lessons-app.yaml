@@ -7,6 +7,3 @@ spec:
   project: dev
   source:
     path: lessons/apps-definitions/children/overlays/dev
-    kustomize:
-      # Optional image name prefix
-      namePrefix: dev-
