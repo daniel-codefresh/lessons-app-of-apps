@@ -7,5 +7,6 @@ spec:
   project: production
   source:
     path: lessons/lessons-api/overlays/production
-#    repoURL: https://github.com/daniel-codefresh/lessons-app-of-apps
-#    targetRevision: master
+  kustomize:
+    # Optional image name prefix
+    namePrefix: prod-

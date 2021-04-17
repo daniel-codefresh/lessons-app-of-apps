@@ -1,11 +1,12 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: lessons-app
+  name: lessons
   namespace: argocd
 spec:
   project: production
   source:
     path: lessons/apps-definitions/children/overlays/production
-#    repoURL: https://github.com/daniel-codefresh/lessons-app-of-apps
-#    targetRevision: master
+  kustomize:
+    # Optional image name prefix
+    namePrefix: prod-
