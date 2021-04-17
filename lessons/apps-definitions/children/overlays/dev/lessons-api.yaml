@@ -1,0 +1,11 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: lessons-api
+  namespace: argocd
+spec:
+  project: dev
+  source:
+    path: lessons/lessons-api/overlays/dev
+#    repoURL: https://github.com/daniel-codefresh/lessons-app-of-apps
+#    targetRevision: master

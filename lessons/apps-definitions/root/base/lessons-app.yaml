@@ -1,0 +1,16 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: lessons-app
+  namespace: argocd
+  finalizers:
+  - resources-finalizer.argocd.argoproj.io
+spec:
+  destination:
+    namespace: default
+    name: in-cluster
+  project: dev
+  source:
+#    path: lessons/children-apps-def/overlays/dev
+    repoURL: https://github.com/daniel-codefresh/lessons-app-of-apps
+    targetRevision: master

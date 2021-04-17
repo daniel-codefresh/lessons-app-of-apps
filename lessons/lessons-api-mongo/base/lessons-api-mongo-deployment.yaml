@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: lessons-api-mongo
+  namespace: lessons-app
+  labels:
+    app: lessons-api-mongo
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: lessons-api-mongo
+  template:
+    metadata:
+      labels:
+        app: lessons-api-mongo
+    spec:
+      containers:
+      - name: lessons-api-mongo
+        image: mongo:4.2
+        ports:
+        - containerPort: 27017
+
