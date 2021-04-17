@@ -7,6 +7,6 @@ spec:
   project: production
   source:
     path: lessons/lessons-api/overlays/production
-  kustomize:
-    # Optional image name prefix
-    namePrefix: qa-
+    kustomize:
+      # Optional image name prefix
+      namePrefix: qa-

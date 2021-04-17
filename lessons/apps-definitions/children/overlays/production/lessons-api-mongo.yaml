@@ -7,6 +7,6 @@ spec:
   project: production
   source:
     path: lessons/lessons-api-mongo/overlays/production
-  kustomize:
-    # Optional image name prefix
-    namePrefix: prod-
+    kustomize:
+      # Optional image name prefix
+      namePrefix: prod-

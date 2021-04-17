@@ -7,6 +7,6 @@ spec:
   project: qa
   source:
     path: lessons/apps-definitions/children/overlays/qa
-  kustomize:
-    # Optional image name prefix
-    namePrefix: qa-
+    kustomize:
+      # Optional image name prefix
+      namePrefix: qa-
